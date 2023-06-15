@@ -1,0 +1,10 @@
+name: "mw-helm-setup"
+on: [workflow_dispatch]
+
+jobs:
+  mw-helm-setup:
+    runs-on: ubuntu-latest
+    name: A job to setup helm
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./
